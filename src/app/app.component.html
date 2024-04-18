@@ -13,4 +13,12 @@
     
   </ng-template>
   <ng-template #renderIt>I am renderd using the *ngIF but should not follow this method</ng-template>
+  <ng-container>
+    <p>I will render no matter what</p>
+  </ng-container>
+  <ng-container *ngTemplateOutlet="repeatedText"></ng-container>
+  <ng-template #repeatedText>
+    I am projected using the *ngTemplateOutlet
+  </ng-template>
+  
 </div>

@@ -11,6 +11,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   shouldHighlight:boolean=true
+  styledOfp={
+    fontSize:'18px',backgroundColor:'olive'
+  }
   classesObject={
     highlighted:true,
     bigFont:true

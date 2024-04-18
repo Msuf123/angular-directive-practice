@@ -6,4 +6,11 @@
   <p appHighlight>This para is styled using a custom directive</p>
   <p appHover clickColor="orange">This para is styled usign the custom directive just hover on me or you can even click!!</p>
   <p ngNonBindable>This para has a direvitce name as nonBindable {{1+1}}</p>
+  <ng-template [ngIf]="true">
+  <p>Now this content is conditionally rendered using the ng template</p>
+  </ng-template>
+  <ng-template *ngIf="true then renderIt">
+    
+  </ng-template>
+  <ng-template #renderIt>I am renderd using the *ngIF but should not follow this method</ng-template>
 </div>

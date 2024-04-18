@@ -3,4 +3,7 @@
   <p [ngClass]="classesObject">This highlight is done in component</p>
   <p [ngStyle]="{fontSize:'24px',backgroundColor:'lightgreen'}">This is styled using the ng Style</p>
   <p [ngStyle]="styledOfp">This styling is done in component</p>
+  <p appHighlight>This para is styled using a custom directive</p>
+  <p appHover clickColor="orange">This para is styled usign the custom directive just hover on me or you can even click!!</p>
+  <p ngNonBindable>This para has a direvitce name as nonBindable {{1+1}}</p>
 </div>
